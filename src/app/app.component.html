@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Pathfinding Algorithm Visualizer</h1>
+  <div class="info">
+    <div class="legend">
+      <div class="legend-item"><span class="color-box start"></span> Start (S)</div>
+      <div class="legend-item"><span class="color-box goal"></span> Goal (G)</div>
+      <div class="legend-item"><span class="color-box wall"></span> Wall</div>
+      <div class="legend-item"><span class="color-box visited"></span> Visited</div>
+      <div class="legend-item"><span class="color-box path"></span> Final Path</div>
+    </div>
+  </div>
+  <div class="controls">
+    <button class="btn btn-dfs" (click)="runDFS()"> Run DFS</button>
+    <button class="btn btn-bfs" (click)="runBFS()"> Run BFS</button>
+  </div>
+  <canvas #canvas></canvas>
+  <div class="description">
+    <p><strong>DFS (Depth-First Search)</strong>: Explores as far as possible along each branch before backtracking. May not find the shortest path.</p>
+    <p><strong>BFS (Breadth-First Search)</strong>: Explores all neighbors at the current depth before moving deeper. Guarantees the shortest path.</p>
+  </div>
+</div>
